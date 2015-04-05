@@ -99,8 +99,7 @@ strong {
 
 ul {
   list-style-position: inside;
-  list-style: disc;
-  padding-left: 25px;
+  list-style: none;
 }
 
 ol {
@@ -313,12 +312,6 @@ a.buttons:hover {
 	color: #fff;
 	text-decoration: none;
 }
-
-/* Custom Major*/
-.choose-a-major {
-
-}
-
 /* Section - for main page content */
 
 section {
@@ -423,4 +416,18 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+/* Custom Styles */
+.choose-a-major {
+  border: 1px solid #b23214;
+  border-radius: 5px;
+  background-color: #FBFAF7;
+  outline: none;
+  margin-left: 10px;
+  padding: 5px;
+}
+.choose-a-major:hover {
+  background-color: #b23214;
+  color: white;
 }
