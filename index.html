@@ -14,6 +14,14 @@
 		<![endif]-->
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1698100607128907";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 		<div class="wrapper">
 			<header>
 				<h1 class="header">Major Randomizer</h1>
@@ -39,15 +47,18 @@
 
 
 				<h3>
-					<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact
+					<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add a unique major!
 				</h3>
-				<a href="mailto:lxshancock@gmail.com" target="_blank">lxshancock@gmail.com</a>
+				<a target="_blank" href="http://goo.gl/forms/2ZHw0hYiss">Form Link</a>
 
 				<h3>
 					<a id="share" class="anchor" href="#share" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 				</h3>
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alexishancock.github.io/unique-majors/" data-via="nappy_techie" data-hashtags="CollegeMajors">Tweet</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alexishancock.github.io/unique-majors/" data-via="nappy_techie" data-hashtags="CollegeMajors"></a>
+				<script>
+					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+				</script>
+				<div class="fb-like" data-href="http://alexishancock.github.io/unique-majors/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 			</section>
 			<footer>
 				<p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
