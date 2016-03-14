@@ -30,7 +30,7 @@ body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #232323;
-	background-color: #FBFAF7;
+	background-color: #fff;
 	margin: 0;
 	line-height: 1.8em;
 	-webkit-font-smoothing: antialiased;
@@ -76,7 +76,7 @@ h4, h5, h6 {
 }
 
 a {
-  color:#b23214;
+  color:#558b2f ;
   font-weight:200;
   text-decoration:none;
 }
@@ -420,14 +420,14 @@ footer {
 
 /* Custom Styles */
 .choose-a-major {
-  border: 1px solid #b23214;
+  border: 1px solid #558b2f ;
   border-radius: 5px;
-  background-color: #FBFAF7;
+  background-color: #fff;
   outline: none;
   margin-left: 10px;
   padding: 5px;
 }
 .choose-a-major:hover {
-  background-color: #b23214;
+  background-color: #558b2f ;
   color: white;
 }
