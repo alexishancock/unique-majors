@@ -431,6 +431,6 @@ footer {
   background-color: #558b2f ;
   color: white;
 }
-.fb-like {
+.fb-like.fb_iframe_widget {
   display: inline-flex;
 }
