@@ -1,6 +1,6 @@
 $(document).ready( function() {
 
-	 $.getJSON("https://api.myjson.com/bins/1drql", function (data) {
+	 $.getJSON("javascripts/majors.json", function (data) {
 
 	 	$( ".choose-a-major" ).click( function( event ) {
 
