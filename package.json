@@ -1,0 +1,26 @@
+{
+  "name": "unique-majors",
+  "version": "1.0.0",
+  "description": "Exploration Tool",
+  "main": "javascripts/scripts.js",
+  "scripts": {
+    "gulp": "gulp",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexishancock/unique-majors.git"
+  },
+  "keywords": [
+    "college",
+    "majors"
+  ],
+  "author": "Alexis Hancock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexishancock/unique-majors/issues"
+  },
+  "homepage": "https://github.com/alexishancock/unique-majors#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

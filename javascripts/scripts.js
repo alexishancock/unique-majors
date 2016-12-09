@@ -1,23 +1,30 @@
 $(document).ready( function() {
 
-	 $.getJSON("javascripts/majors.json", function (data) {
+	$.getJSON("https://spreadsheets.google.com/feeds/list/1FHeOQKhKx0ywdUHv-tp1cL1Y__0QIIINX00PCERvPtY/od6/public/basic?alt=json", function(data) {
 
-	 	$( ".choose-a-major" ).click( function( event ) {
+	   	$( ".choose-a-major" ).click( function( event ) {
 
-	 		$( ".majors-listed" ).empty();
+	   		$( ".majors-listed" ).empty();
 
-				var random_num   = Math.floor( ( Math.random() * 39 ) + 1 );
-				var degree_name  = data[random_num]['Degree Name'];
-				var degree_field = data[random_num]['Category'];
-				var degree_type  = data[random_num]['Degree Type'];
-				var degree_link  = data[random_num]['Link'];
+	   			var entries = data.feed.entry.length;
 
-				var html = "<li id='" +  "field-" + random_num + "'>Field: " + degree_field + "</li>";
-					html += "<li id='" +  "name-" + random_num + "'>Name: " + degree_name + "</li>";
-					html += "<li id='" +  "degree" + random_num + "'>Degree Type: " + degree_type + "</li>";
-					html += "<a target=" + '_blank' + " href=" + degree_link + " id=" +  random_num + ">Link: " + degree_link + "</a>";
+	   			console.log(entries);
 
-		 	$( ".majors-listed" ).append( html );
-		});
+	  			var random_num = Math.floor( ( Math.random() * entries ) + 1 );
+
+	  			var content = data.feed.entry[random_num]['content']['$t'].split(',');
+
+	  			var degree_name  = data.feed.entry[random_num]['title']['$t'];
+	  			var degree_field = content[0].replace('category: ', '');
+	  			var degree_type  = content[1].replace(' degreetype: ', '');
+	  			var degree_link  = content[2].replace(' link: ', '');
+
+	  			var html = "<li id='" +  "field-" + random_num + "'>Field: " + degree_field + "</li>";
+	  				html += "<li id='" +  "name-" + random_num + "'>Name: " + degree_name + "</li>";
+	  				html += "<li id='" +  "degree" + random_num + "'>Degree Type: " + degree_type + "</li>";
+	  				html += "<a target=" + '_blank' + " href=" + degree_link + " id=" +  random_num + ">Link: " + degree_link + "</a>";
+
+	  	 	$( ".majors-listed" ).append( html );
+	  	});
 	});
 });
