@@ -8,11 +8,11 @@ $(document).ready( function() {
 
 	   			var entries = data.feed.entry.length;
 
-	   			console.log(entries);
-
-	  			var random_num = Math.floor( ( Math.random() * entries ) + 1 );
+	  			var random_num = Math.floor( ( Math.random() * entries ) );
 
 	  			var content = data.feed.entry[random_num]['content']['$t'].split(',');
+
+	  			console.log(random_num);
 
 	  			var degree_name  = data.feed.entry[random_num]['title']['$t'];
 	  			var degree_field = content[0].replace('category: ', '');
