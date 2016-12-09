@@ -12,8 +12,6 @@ $(document).ready( function() {
 
 	  			var content = data.feed.entry[random_num]['content']['$t'].split(',');
 
-	  			console.log(random_num);
-
 	  			var degree_name  = data.feed.entry[random_num]['title']['$t'];
 	  			var degree_field = content[0].replace('category: ', '');
 	  			var degree_type  = content[1].replace(' degreetype: ', '');
