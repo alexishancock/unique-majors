@@ -19,7 +19,7 @@ gulp.task('sass:watch', function () {
 gulp.task('generate:sw', function() {
 	var swOptions = {
 		staticFileGlobs: [
-		'./*html',
+		'./*.html',
 		'./images/*{png,svg,gif,jpg}',
 		'./javascripts/*.js',
 		'./stylesheets/*.css'
