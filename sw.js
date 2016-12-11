@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/images/octocat-small.png","d8483684d57a3a27055bed9798f7da6f"],["/index.html","ce9d7fd574c1a593627a400ca408f7da"],["/javascripts/scale.fix.js","c8bc549ff1ede73f7dfa1b7ed80694f4"],["/javascripts/scripts.js","66107454ffd1458b7458533c53946817"],["/stylesheets/pygment_trac.css","a6c15c941ca4be2233772c9adf133877"],["/stylesheets/style.css","caacbc2c1f1d3ebe4f68f0b1fcda932a"]];
+var precacheConfig = [["/unique-majors/images/iconmonstr-circle-2-48.png","9661ac7d052beaf8e49d46b794e56df1"],["/unique-majors/images/iconmonstr-circle-2-72.png","5109521244adc635b0f877ec4d0d33ff"],["/unique-majors/images/iconmonstr-circle-2-96.png","3609df4160dbb6eda97bf1c66633a93a"],["/unique-majors/images/octocat-small.png","d8483684d57a3a27055bed9798f7da6f"],["/unique-majors/index.html","8b2c5b2b9c5136c45726f3c4fc192ce1"],["/unique-majors/javascripts/indexed.js","19afbbe149a8b87e9d921ed5cfe0f54d"],["/unique-majors/javascripts/scale.fix.js","c8bc549ff1ede73f7dfa1b7ed80694f4"],["/unique-majors/javascripts/scripts.js","5ceea806667bd757c423ba4bd5a5e149"],["/unique-majors/stylesheets/pygment_trac.css","a6c15c941ca4be2233772c9adf133877"],["/unique-majors/stylesheets/style.css","caacbc2c1f1d3ebe4f68f0b1fcda932a"]];
 var cacheName = 'sw-precache-v2--' + (self.registration ? self.registration.scope : '');
 
 
