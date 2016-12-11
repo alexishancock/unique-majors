@@ -24,7 +24,16 @@ gulp.task('generate:sw', function() {
 		'./javascripts/*.js',
 		'./stylesheets/*.css'
 		],
-		stripPrefix: '.'
+		stripPrefix: '.',
+		runtimeCaching: [{
+		  urlPattern: /^https:\/\/spreadsheets\.google\.com\/feeds\/list\/1FHeOQKhKx0ywdUHv-tp1cL1Y__0QIIINX00PCERvPtY\/od6\/public\/basic\\?alt=json/,
+		  handler: 'networkFirst',
+		  options: {
+		    cache: {
+		      name: 'majors-v1'
+		    }
+		  }
+		}]
 	};
 	return swPrecache.write('sw.js', swOptions);
 });
