@@ -23,5 +23,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "sw-precache": "^4.2.3"
+  },
+  "dependencies": {
+    "path-to-regexp": "^1.7.0"
   }
 }

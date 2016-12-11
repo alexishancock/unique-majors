@@ -249,7 +249,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https:\/\/spreadsheets\.google\.com\/feeds\/list\/1FHeOQKhKx0ywdUHv-tp1cL1Y__0QIIINX00PCERvPtY\/od6\/public\/basic\\?alt=json/, toolbox.networkFirst, {"cache":{"name":"majors-v1"}});
+toolbox.router.get(/^https:\/\/spreadsheets.google.com\/feeds\/list\/1FHeOQKhKx0ywdUHv-tp1cL1Y__0QIIINX00PCERvPtY\/od6\/public\/basic?alt=json/, toolbox.cacheFirst, {"cache":{"name":"majors-v1"}});
 
 
 
