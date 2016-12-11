@@ -3,7 +3,7 @@
   "short_name": "Unique Majors",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#fff",
+  "background_color": "#689F38",
   "description": "A simple tool to help with the overwhelming college exploration process.",
   "icons": [{
     "src": "images/iconmonstr-circle-2-48.png",
