@@ -3,6 +3,9 @@
   "short_name": "Unique Majors",
   "start_url": ".",
   "display": "standalone",
+  "orientation": "portrait-primary",
+  "lang": "en-US",
+  "theme_color": "#689F38",
   "background_color": "#689F38",
   "description": "A simple tool to help with the overwhelming college exploration process.",
   "icons": [{
@@ -16,6 +19,18 @@
   }, {
     "src": "images/iconmonstr-circle-2-96.png",
     "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "images/iconmonstr-circle-2-144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "images/iconmonstr-circle-2-168.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "images/iconmonstr-circle-2-192.png",
+    "sizes": "192x192",
     "type": "image/png"
   }]
 }
