@@ -1,3 +1,4 @@
+// register sw.js
 $(document).ready( function() {
 
 	$.getJSON("https://spreadsheets.google.com/feeds/list/1FHeOQKhKx0ywdUHv-tp1cL1Y__0QIIINX00PCERvPtY/od6/public/basic?alt=json", function(data) {

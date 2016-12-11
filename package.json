@@ -4,7 +4,7 @@
   "description": "Exploration Tool",
   "main": "javascripts/scripts.js",
   "scripts": {
-    "gulp": "gulp",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/alexishancock/unique-majors#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "sw-precache": "^4.2.3"
   }
 }
