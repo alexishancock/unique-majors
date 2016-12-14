@@ -40,14 +40,11 @@ if ('serviceWorker' in navigator) {
               console.log('New or updated content is available.');
 
               Notification.requestPermission(function(result) {
+                console.log(result);
                 if (result === 'granted') {
-                  navigator.serviceWorker.ready.then(function(registration) {
-                    registration.showNotification('Vibration Sample', {
-                      body: 'Buzz! Buzz!',
-                      icon: '../images/touch/chrome-touch-icon-192x192.png',
-                      vibrate: [200, 100, 200, 100, 200, 100, 200],
-                      tag: 'vibration-sample'
-                    });
+                  registration.showNotification('Refresh', {
+                    body: 'New content is available; please refresh.',
+                    tag: 'notification-refresh'
                   });
                 }
               });
@@ -56,6 +53,16 @@ if ('serviceWorker' in navigator) {
               // At this point, everything has been precached.
               // It's the perfect time to display a "Content is cached for offline use." message.
               console.log('Content is now available offline!');
+
+              Notification.requestPermission(function(result) {
+                console.log(result);
+                if (result === 'granted') {
+                  registration.showNotification('Offline', {
+                    body: 'Content is cached for offline use.',
+                    tag: 'notification-refresh-offline'
+                  });
+                }
+              });
             }
             break;
 
