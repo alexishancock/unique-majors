@@ -42,7 +42,7 @@ if ('serviceWorker' in navigator) {
               Notification.requestPermission(function(result) {
                 console.log(result);
                 if (result === 'granted') {
-                  registration.showNotification('Refresh', {
+                  reg.showNotification('Refresh', {
                     body: 'New content is available; please refresh.',
                     tag: 'notification-refresh'
                   });
@@ -57,7 +57,7 @@ if ('serviceWorker' in navigator) {
               Notification.requestPermission(function(result) {
                 console.log(result);
                 if (result === 'granted') {
-                  registration.showNotification('Offline', {
+                  reg.showNotification('Offline', {
                     body: 'Content is cached for offline use.',
                     tag: 'notification-refresh-offline'
                   });
